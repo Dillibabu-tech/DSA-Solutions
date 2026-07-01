@@ -8,25 +8,24 @@ namespace DSA.Strings
 {
     internal class Valid_Anagram
     {
-        public bool IsAnagram(string s, string t)
+        public static bool Anagram(String s1, String s2)
         {
-            if (s.Length != t.Length)
+            if(s1.Length != s2.Length)
             {
                 return false;
             }
-               int[] cnt = new int[26];
-            foreach (char c in s)
+            int[] str = new int[26];
+            foreach(char c in s1)
             {
-                cnt[c - 'a']++;
+                str[c - 'a']++;
             }
-              foreach (char c in t)
+            foreach(char c1 in s2)
             {
-                if (--cnt[c - 'a'] < 0)
+                if(--str[c1 - 'a'] <0)
                 {
                     return false;
                 }
             }
-                                
             return true;
         }
     }
