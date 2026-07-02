@@ -14,11 +14,11 @@ namespace DSA.Strings
             int max = str1.Length - 1;
             while(max > min)
             {
-                while(max > min && !char.IsLetterOrDigit(str1[max]));
+                while(max > min && !char.IsLetterOrDigit(str1[min]));
                 min++;
-                while (max > min && !char.IsLetterOrDigit(str1[min])) ;
+                while (max > min && !char.IsLetterOrDigit(str1[max])) ;
                 max--;
-                if(char.ToLower(str1[min]) != char.ToLower(str1[min]))
+                if(char.ToLower(str1[min]) != char.ToLower(str1[max]))
                 {
                 return false;
                 }
