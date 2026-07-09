@@ -55,26 +55,26 @@ namespace DSA.Linked_List
                 pra.next = ln1 ?? ln2;
                 return demo.next;
             }
-            public static void Main()
-            {
-                ListNode ln1 = new ListNode(1);
-                ln1.next = new ListNode(2);
-                ln1.next.next = new ListNode(3);
+            //public static void Main()
+            //{
+            //    ListNode ln1 = new ListNode(1);
+            //    ln1.next = new ListNode(2);
+            //    ln1.next.next = new ListNode(3);
 
-                ListNode ln2 = new ListNode(4);
-                ln2.next = new ListNode(5);
+            //    ListNode ln2 = new ListNode(4);
+            //    ln2.next = new ListNode(5);
 
-                ListNode ln3 = new ListNode(6);
+            //    ListNode ln3 = new ListNode(6);
 
-                ListNode[] res = { ln1, ln2, ln3 };
+            //    ListNode[] res = { ln1, ln2, ln3 };
 
-                ListNode result = mergelist(res);
-                while(result != null)
-                {
-                    Console.WriteLine(result.val+" ");
-                    result = result.next;
-                }
-            }
+            //    ListNode result = mergelist(res);
+            //    while(result != null)
+            //    {
+            //        Console.WriteLine(result.val+" ");
+            //        result = result.next;
+            //    }
+            //}
         }
     }
 }
