@@ -8,7 +8,7 @@ namespace DSA.Trees
 {
     internal class Subtree_of_Another_Tree
     {
-        public class TreeNode
+        public class TreeNode   
         {
             public int val;
             public TreeNode left;
